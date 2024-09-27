@@ -1,0 +1,38 @@
+<!--Quick Quiz:
+    without using Br tag, writa a vertically aligned form asking for a name,city,and pincode of a user-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+    <link rel="stylesheet" href="QuickQuiz.css">
+</head>
+
+<body>
+    <h1>User Details Form</h1>
+    <form action="post">
+        <div>
+            <span>
+                <label for="username">Enter Username</label>
+                <input type="text" id="username" name="Username" placeholder="Enter your Name" autofocus>
+            </span>
+        </div>
+        <div>
+            <span>
+                <label for="city">Enter your City</label>
+                <input type="text" id="city" name="city" placeholder="Enter city Name">
+            </span>
+        </div>
+        <div>
+            <span>
+                <label for="pincode">Enter Pincode</label>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" pattern="[0-9]">
+            </span>
+        </div>
+    </form>
+</body>
+
+</html>

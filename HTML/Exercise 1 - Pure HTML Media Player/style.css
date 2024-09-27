@@ -1,0 +1,18 @@
+body{
+    background-color:wheat;
+}
+header{
+background-color: coral;
+}
+div{
+    background-color: white;
+}
+#videos{
+    background-color: rgb(245, 245, 245);
+}
+th{
+    border:2px solid black;
+}
+td{
+    border:2px solid black;
+}

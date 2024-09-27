@@ -1,0 +1,100 @@
+<!--You are given 12 files; 6 Audio and 6 Video.
+Design a website using HTML only which shows these 12 files.
+1.mp3,2.mp3,3.mp3.....6.mp3
+1.mp4,2.mp4,3.mp4.....6.mp4
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This Website contains different audios and videos for entertainment purpose.">
+    <meta name="keywords" content="songs,memes,videos">
+    <title>Pure HTML Media Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><img src="media player logo.jpg" width="50" height="50"> Pure HTML Media Player</h1>
+    </header>
+
+    <main>
+        <div id="audios" class="Media audios">
+            <h2><img src="song logo.jpg" width="200" height="100"></h2>
+            <table>
+                <caption>Song's Description</caption>
+                <tr>
+                    <th>Song No.</th>
+                    <th colspan="2">Song Name</th>
+                    <th>Singer</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td colspan="2">Tere Bina</td>
+                    <td>A.R.Rehman</td>
+                <tr>
+                    <td>2.</td>
+                    <td colspan="2">Khamosiyan</td>
+                    <td>Arijit Singh</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td colspan="2">Tu Har Lamha</td>
+                    <td>Arijit Singh</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td colspan="2">Jo Tu Na Mila</td>
+                    <td>Asim Azhar</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td colspan="2">Tu Hi Hai Ashiqui</td>
+                    <td>Ariji Singh</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td colspan="2">Ae Dil Hai Mushkil</td>
+                    <td>Arijit Singh</td>
+                </tr>
+                </tr>
+            </table>
+            <h3>Tere Bina</h3>
+            <p> <audio src="1.mp3" controls></audio> </p>
+            <h3>Khamosiyan</h3>
+            <p> <audio src="2.mp3" controls></audio> </p>
+            <h3>Tu Har Lamha</h3>
+            <p> <audio src="3.mp3" controls></audio> </p>
+            <h3>Jo Tu NA Mila</h3>
+            <p> <audio src="4.mp3" controls></audio></p>
+            <h3>Tu Hi Hai Ashiqui</h3>
+            <p> <audio src="5.mp3" controls></audio> </p>
+            <h3>Ae Dil Hai Mushkil</h3>
+            <p> <audio src="6.mp3" controls></audio> </p>
+        </div>
+        <div id="videos" class="Media Videos">
+            <h2><img src="meme logo.jpg" width="500" height="200"></h2>
+            <video Src="1.mp4" width="560" height="315" Controls></video>
+            <video Src="2.mp4" width="560" height="315" Controls></video>
+            <video Src="3.mp4" width="560" height="315" Controls></video>
+            <video Src="4.mp4" width="560" height="315" Controls></video>
+            <video Src="5.mp4" width="560" height="315" Controls></video>
+            <video Src="6.mp4" width="560" height="315" Controls></video>
+        </div>
+    </main>
+
+    <footer>
+        <h3>You have finished all the audios and videos!
+            <ul>
+                <Li>If you want more audios then click <a href="https://open.spotify.com/">More Audios</a></Li>
+                <Li>If you want more Videos then click <a href="https://www.youtube.com/">More Videos</a></Li>
+            </ul>
+        </h3>
+    </footer>
+</body>
+
+</html>
