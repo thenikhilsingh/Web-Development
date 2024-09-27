@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Masterclass</title>
+    <style>
+        div {
+            /*Element Selector*/
+            background-color: rgb(17, 198, 230);
+        }
+
+        .aqua {
+            /*Class Selector*/
+            background-color: aqua;
+        }
+
+        #green {
+            /*ID Selector*/
+            background-color: green;
+        }
+
+        div>P {
+            /*Child Selector*/
+            color: blue;
+            background-color: brown;
+        }
+
+        div P {
+            /*Descendant Selector*/
+            color: blue;
+            background-color: brown;
+        }
+
+        * {
+            /*Universal Selector*/
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited {
+            /*Pseudo Selector*/
+            color: gold;
+        }
+
+        a:link {
+            /*Pseudo Selector*/
+            color: green;
+        }
+
+        a:active {
+            /*Pseudo Selector*/
+            background-color: red;
+        }
+
+        a:hover {
+            /*Pseudo Selector*/
+            background-color: yellow;
+        }
+
+        p:first-child {
+             /*Pseudo Selector*/
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am First</p>
+        <p>I am Second</p>
+    </main>
+    <div class="aqua">
+        I am a Div.
+    </div>
+    <div id="green">
+        I am another Div.
+        <article>
+            <p>I am the Para inside the Div</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.twitter.com">Go to twitter</a>
+</body>
+
+</html>

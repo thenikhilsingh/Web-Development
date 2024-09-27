@@ -1,0 +1,117 @@
+<!--Design a Navbar and after designing the navbar create a stylesheet in which only a variable should change means you have to create some global variables in which colors contrast are changed.It means you have to create a multicolor navbar.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Website</title>
+    <style>
+        * {
+            padding: 15px;
+            margin: 0;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            width: 700px;
+            border-radius: 50px;
+            background-color: rgb(227, 234, 236);
+        }
+
+        .home {
+            background-color: rgb(255, 51, 0);
+            border-radius: 50px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .projects {
+            background-color: rgb(255, 174, 0);
+            border-radius: 50px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .about-us {
+            background-color: rgb(255, 238, 0);
+            border-radius: 50px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .gallery {
+            background-color: rgb(179, 255, 0);
+            border-radius: 50px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .contacts {
+            background-color: rgb(0, 255, 64);
+            border-radius: 50px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .search {
+            background-color: rgb(0, 0, 0);
+           a{color: white;}
+            border-radius: 50px;
+            width: 180px;
+            text-align: center;
+        }
+
+        .home:hover {
+            background-color: rgb(245, 168, 168);
+        }
+
+        .projects:hover {
+            background-color: rgb(230, 183, 121);
+        }
+
+        .about-us:hover {
+            background-color: rgb(241, 232, 102);
+        }
+
+        .gallery:hover {
+            background-color: rgb(188, 231, 87);
+        }
+
+        .contacts:hover {
+            background-color: rgb(111, 245, 144);
+        }
+
+        .search:hover {
+            background-color: white;
+           a{ color: rgb(10, 0, 0); }
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="/">Home</a></li>
+            <li class="about-us"><a href="/">About us</a></li>
+            <li class="gallery"><a href="/">Gallery</a></li>
+            <li class="contacts"><a href="/">Contacts</a></li>
+            <li class="search"><a
+                    href="/">Search...&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⌕</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

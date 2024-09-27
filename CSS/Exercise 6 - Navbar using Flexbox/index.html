@@ -1,0 +1,64 @@
+<!--Design this Website's Navbar using Flexbox.
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblg0c1NHcGZzQ29WcUFuVXNDcDZsMERVdm9UQXxBQ3Jtc0ttdWk0X1hwekFHUXZGLVRuZDRlQmgwb19JT3dXN0Q4R1J6aXNQNUh0Y3JlZnNKbDNlRFo1TGNLZ0tNd0EzSWNRSHVERXRMUFdwNTc1VmtYdjY3bG1TZ055eDhGcDlMV2E1anRfcmpWa254NnJvVlpQcw&q=https%3A%2F%2Fbit.ly%2FUltraEdit-CWH&v=A5fK2Y8-if8-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using Flexbox</title>
+    <style>
+        .brand-logo {
+            width: 165px;
+            height: 65px;
+            cursor: pointer;
+        }
+
+        .arrow {
+            width: 10px;
+            height: 10px;
+        }
+
+        .lang {
+            height: 40px;
+            width: 40px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            color: rgba(0, 0, 0, 0.596);
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 250px;
+        }
+        li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="brand-logo" src="brand-logo.png" alt="brand-logo">
+            <ul>
+                <li>Products <img class="arrow" src="arrow.png" alt="arrow"></li>
+                <li>Pricing <img class="arrow" src="arrow.png" alt="arrow"></li>
+                <li>Resources <img class="arrow" src="arrow.png" alt="arrow"></li>
+                <li>About us <img class="arrow" src="arrow.png" alt="arrow"></li>
+                <li>Security and compliance</li>
+                <li><img class="lang" src="language.jpg" alt="language"></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

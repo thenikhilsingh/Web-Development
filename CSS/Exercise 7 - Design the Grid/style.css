@@ -1,0 +1,315 @@
+.container {
+   /* border: 2px solid black;*/
+    display: grid;
+    grid-template-areas: "nav nav nav"
+        "article article article"
+        "side empty empty"
+        "article2 article2 article2"
+        "article3 article3 article3"
+        "article4 article4 article4"
+        "article5 article5 article5"
+        "footer footer footer";
+
+}
+
+/*.item {
+    border: 2px solid rgb(0, 0, 0);
+    height: 300px;
+}*/
+
+.item-1 {
+    grid-area: nav;
+    height: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.item-2 {
+    grid-area: article;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-3 {
+    grid-area: side;
+    height: 150px;
+    width: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 15px;
+}
+
+.item-4 {
+    grid-area: empty;
+    height: 150px;
+}
+
+.item-5 {
+    grid-area: article2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+    flex-wrap: wrap;
+    height: 700px;
+    gap: 30px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-6 {
+    grid-area: article3;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
+.item-7 {
+    grid-area: article4;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item-8 {
+    grid-area: article5;
+    height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:  baseline;
+    font-size: 15px;
+    column-gap: 25px;
+    background-color: whitesmoke;
+}
+.item-9{
+    grid-area: footer;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 150px;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+
+.brand-logo {
+    width: 165px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+}
+
+.lang {
+    height: 40px;
+    width: 40px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 250px;
+}
+
+li {
+    cursor: pointer;
+}
+
+.reviews {
+    width: 130px;
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.load {
+    background-color: rgb(9, 191, 223);
+    color: white;
+    height: 45px;
+    width: 350px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#p1 {
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+#p2 {
+    font-size: 25px;
+    width: 980px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+#p3 {
+    color: rgb(20, 20, 20);
+    font-size: 25px;
+}
+
+#p4 {
+    color: rgba(0, 0, 0, 0.747);
+    font-size: 13px;
+}
+#p5{
+    width: 450px;
+}
+#p6{
+    width: 900px;
+}
+
+.para {
+    display: flex;
+    align-items: baseline;
+}
+
+.apk {
+    background-color: rgb(226, 235, 232);
+    width: 300px;
+    height: 150px;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.apk-lang{
+    font-size: 12px;
+}
+.bit-link{
+    background-color: rgb(65, 160, 65);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+}
+form{
+    background-color: white;
+    color: black;
+    width: 380px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+}
+form p{
+    color: rgb(9, 191, 223);
+    font-size: x-large;
+}
+form span{
+    background-color: rgb(9, 191, 223);
+    font-size: 20px;
+    width: 250px;
+    height: 43px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+form label{
+    font-size: 14px;
+}
+form input{
+    width: 250px;
+    height: 45px;
+    border: 1px solid rgba(57, 57, 59, 0.534);
+}
+.item-7 b{
+    color:  rgb(9, 191, 223);
+    font-weight: normal;
+    cursor: pointer;
+}
+.item-8 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-8 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.subscribe{
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.subscribe p{
+    color:  rgb(57, 57, 59);
+}
+.subscribe input{
+    width: 230px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(57, 57, 59);
+    border-radius: 8px;
+}
+.subscribe span{
+    text-align: center;
+    width: 230px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: rgb(9, 191, 223);
+    color: white;
+    font-weight: bold;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   cursor: pointer;
+}
+.social{
+    width: 30px;
+    height: 30px;
+}
+.item-9 p{
+    font-size: 13px;
+    color: rgb(57, 57, 59);
+}
