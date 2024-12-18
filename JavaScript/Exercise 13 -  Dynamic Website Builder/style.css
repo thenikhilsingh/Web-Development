@@ -1,0 +1,29 @@
+.container {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+
+#img-cont {
+  height: 138px;
+}
+
+#cardImg {
+  border-radius: 10px;
+}
+
+#details {
+  color: white;
+  width: 100%;
+}
+#videoDuration {
+  background-color: #000000cf;
+  color: white;
+  position: relative;
+  bottom: 35px;
+  left: 192px;
+  padding: 3px 5px 3px 5px;
+  width: fit-content;
+  border-radius: 5px;
+}
