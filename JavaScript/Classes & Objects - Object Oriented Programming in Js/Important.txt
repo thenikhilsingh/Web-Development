@@ -1,0 +1,9 @@
+Static Methods:- these ae used to implement functions that belong to a class as a whole and not to any particular object.
+We can assign a static method as follows:-
+class Employee{
+    static sMethod(){
+        alert("Hey");
+    }
+}
+Employee.sMethod()
+Static Methods are not available for individual objects.
