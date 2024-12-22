@@ -1,0 +1,7 @@
+try catch works synchronously:-If an exception happens in scheduled code like in statement, then try...catch won't catch it:-
+try{
+    setTimeout(function(){
+        //eror code //script dies and catch won't work
+    })
+} catch...
+thats because the function itself is executed later, when the engine has already left the try...catch construct.
