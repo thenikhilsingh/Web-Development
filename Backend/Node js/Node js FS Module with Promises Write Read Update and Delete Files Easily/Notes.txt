@@ -1,0 +1,69 @@
+// *--------------------------------------------------------------------------------------------------*
+// * Read Directory: fs.promises.readdir
+// * Reads the contents of a directory asynchronously.
+// * Returns an array of file and folder names (strings).
+// * You can combine it with path.join() to get full paths if needed.
+
+//! syntax: fs.promises.readdir(path, options).then().catch();
+
+//? path: Path to the directory.
+//? options: Optional. Can specify encoding ('utf8') or withFileTypes: true to get Dirent objects.
+//? .then(): Returns array of file names or Dirent objects.
+//? .catch(): Catches and handles errors (e.g., if directory doesn’t exist).
+
+// *--------------------------------------------------------------------------------------------------*
+
+// * Create (Write a File): fs.promises.writeFile
+// * Creates or overwrites a file with specified content.
+// * The writeFile() method writes data to a file asynchronously.
+// * If the file does not exist, it is created.
+// * If it exists, its content is replaced.
+
+//! syntax: fs.promises.writeFile(path, data, options).then().catch();
+
+//? path: Path to the file.
+//? data: Content to write.
+//? options: Encoding ('utf8'), flags, etc. (optional).
+// *--------------------------------------------------------------------------------------------------*
+//* Read (Read a File): readFile()
+//* The readFile() method reads data from a file.
+//* It can return the data as a Buffer or string based on the encoding provided.
+
+//! syntax: fs.promises.readFile(path, options).then(data => ...).catch(err => ...);
+
+//? path: Path to the file.
+//? options: Encoding ('utf8') or no encoding for binary data.
+// *--------------------------------------------------------------------------------------------------*
+//* Update (Append Content to a File): appendFile()
+//* Adds content to the end of a file.
+//* The appendFile() method adds content without overwriting the existing data.
+
+//! syntax: fs.promises.appendFile(path, data, options).then().catch();
+
+//? path: Path to the file.
+//? data: Content to append.
+//? options: Encoding ('utf8') or no encoding for binary data.
+// *--------------------------------------------------------------------------------------------------*
+//* Delete (Remove a File): unlink()
+//* Deletes a file from the filesystem.
+//* The unlink() method removes the specified file asynchronously.
+
+//! syntax: fs.promises.unlink(path).then().catch();
+
+//? path: Path to the file.
+// *--------------------------------------------------------------------------------------------------*
+//* Rename a File or Folder: rename()
+//* Renames a file or directory in the filesystem.
+//* The rename() method changes the name or moves the file/directory asynchronously.
+
+//! syntax: fs.promises.rename(oldPath, newPath).then().catch();
+
+//? oldPath: Current path of the file or directory.
+//? newPath: New desired path (or name) of the file or directory.
+// *--------------------------------------------------------------------------------------------------*
+//! Are you tired of using fs.promises everytime?
+
+// You can actually just import with fs/promises
+// const fs = require("fs/promises")
+// Now, you don't need to use fs.promises everytime.
+// *--------------------------------------------------------------------------------------------------*
