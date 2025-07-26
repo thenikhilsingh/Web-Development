@@ -1,0 +1,25 @@
+// *--------------------------------------------------------------------------------------------------*
+// * fs.writeFile(): Writes data to a file, replacing the file if it already exists.
+//! syntax: fs.writeFile(path, data, options, callback);
+
+//? path: File path to write to.
+//? data: Content to write.
+//? options: Optional. Specifies encoding ('utf8'), mode, or flag.
+//? callback: A function with an err parameter.
+// *--------------------------------------------------------------------------------------------------*
+//* fs.readFile(): Reads the contents of a file asynchronously and returns the data as a buffer or string.
+//! syntax: fs.readFile(path, options, callback);
+
+//? path: File path to read from.
+//? options: Optional. An object or string specifying the encoding ('utf8') or flag ('r' for reading).
+//? callback: A function with parameters (err, data).
+// *--------------------------------------------------------------------------------------------------*
+//* fs.appendFile(): Appends data to a file. If the file doesn’t exist, it is created.
+//! syntax: fs.appendFile(path, data, options, callback);
+// *--------------------------------------------------------------------------------------------------*
+//* fs.unlink(): Deletes a file asynchronously
+//! syntax: fs.unlink(path, callback)
+// *--------------------------------------------------------------------------------------------------*
+//* fs.rename(): Renames a file asynchronously from one name to another.
+//! syntax: fs.rename(oldPath, newPath, callback);
+// *--------------------------------------------------------------------------------------------------*
