@@ -1,0 +1,37 @@
+//*---------------------------------------------------------------------------------------------------*
+//* Reading Directory: fsPromises.readdir() : Reads the contents of a directory asynchronously.
+//! syntax: fsPromises.readdir(path, options)
+
+//? path: The directory path to read.
+//? options: Optional. Can specify encoding (e.g., 'utf8') or withFileTypes to return Dirent objects.
+//*---------------------------------------------------------------------------------------------------*
+//* fsPromises.writeFile() : Writes data to a file asynchronously. If the file exists, it overwrites the content.
+//! syntax: fsPromises.writeFile(path, data, options);
+
+///? path: The file path to write to.
+///? data: The content to write to the file.
+///? options: Optional. Specifies encoding (e.g., 'utf8'), mode, or flags.
+//*---------------------------------------------------------------------------------------------------*
+//* Reading a File: fsPromises.readFile() : Reads the contents of a file asynchronously.
+//! syntax: fsPromises.readFile(path, options);
+
+//? path: The file path to read.
+//? options: Optional. Can specify encoding (e.g., 'utf8') or return a Buffer if no encoding is provided.
+//*---------------------------------------------------------------------------------------------------*
+//* Appending Data: fsPromises.appendFile() : Adds content to the end of a file. If the file does not exist, it creates a new one.
+//! syntax: fsPromises.appendFile(path, data, options);
+
+//? path: The file path to read.
+//? options: Optional. Can specify encoding (e.g., 'utf8') or return a Buffer if no encoding is provided.
+//*---------------------------------------------------------------------------------------------------*
+//* Deleting a File: fsPromises.unlink() : Deletes a file by its path.
+//! syntax: fsPromises.unlink(path)
+
+//? path: The file path to delete.
+//*---------------------------------------------------------------------------------------------------*
+//* Renaming or Moving a File: fsPromises.rename() : Renames or moves a file or directory.
+//! syntax: fsPromises.rename(oldPath, newPath)
+
+//? oldPath: The current file or directory path.
+//? newPath: The new file or directory path.
+//*---------------------------------------------------------------------------------------------------*
