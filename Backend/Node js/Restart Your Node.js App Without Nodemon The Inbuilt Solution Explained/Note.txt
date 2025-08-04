@@ -1,0 +1,3 @@
+We can use 
+node --watch filename 
+in place of nodemon to run a node project which restarts automatically.
