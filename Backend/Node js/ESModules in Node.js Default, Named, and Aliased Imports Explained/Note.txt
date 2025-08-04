@@ -1,0 +1,1 @@
+copy "type": "module", in package.json to use ES Module on the place of "type": "commonjs",
