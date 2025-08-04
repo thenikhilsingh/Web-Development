@@ -1,0 +1,5 @@
+// Installing Nodemon
+// npm init or npm init -y (If you don't want to fill data by yourself.)
+// npm i nodemon
+// Run the project
+// Nodemon filename
