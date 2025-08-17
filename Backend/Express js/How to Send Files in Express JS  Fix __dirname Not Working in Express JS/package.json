@@ -1,0 +1,16 @@
+{
+  "name": "how-to-send-files-in-express-js-fix-__dirname-not-working-in-express-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "zod": "^4.0.17"
+  }
+}
