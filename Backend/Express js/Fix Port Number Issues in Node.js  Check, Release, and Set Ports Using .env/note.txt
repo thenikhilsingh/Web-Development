@@ -1,4 +1,4 @@
-//to chec is there any other PORT set or not 
+//to check is there any other PORT set or not 
 echo $env:PORT
 
 //if the PORT is set so to remove
