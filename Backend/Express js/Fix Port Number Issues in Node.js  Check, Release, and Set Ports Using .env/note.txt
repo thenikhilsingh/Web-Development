@@ -1,0 +1,7 @@
+//to chec is there any other PORT set or not 
+echo $env:PORT
+
+//if the PORT is set so to remove
+Remove-Item env:\PORT
+
+
