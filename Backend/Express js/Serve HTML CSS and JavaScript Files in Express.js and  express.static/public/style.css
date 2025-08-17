@@ -1,0 +1,51 @@
+/* Apply a CSS reset to remove default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Heading styles */
+#main-heading {
+  color: #2a7ae2;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.sub-heading {
+  color: #444;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Button styles */
+#changeTextBtn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #2a7ae2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#changeTextBtn:hover {
+  background: #185a9d;
+}
