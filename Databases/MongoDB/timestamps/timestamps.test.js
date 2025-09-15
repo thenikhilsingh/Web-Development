@@ -5,7 +5,7 @@ try {
   await mongoose.connect("mongodb://localhost:27017/timestamp_database");
 } catch (error) {
   console.log(error);
-  process.exit();
+  process.exit(); 
 }
 
 //Step 2: Create Schema
