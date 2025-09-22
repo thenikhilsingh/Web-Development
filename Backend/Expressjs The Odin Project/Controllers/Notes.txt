@@ -1,0 +1,29 @@
+The first argument we pass a route is the path to match, which can either be a string or a regular expression. /messages matches that exactly, while /messages/all only matches if the path is /messages/all (not /messages, nor /messages/new).
+
+With string paths, we can also use {} to make characters optional. For example:
+// Matches both /message and /messages
+"/message{s}"
+
+// Matches both / and /messages
+"/{messages}"
+
+// Matches both /foo/baz and /foo/bar/baz
+"/foo{/bar}/baz"
+
+
+With * (a “splat” or “wildcard”), we can match any number of any characters. Splats in Express paths must always be followed by a name.
+
+A common use case for a splat would be as a catch-all for all otherwise unmatched paths, e.g. for custom 404 error handling.
+// Matches / and /odin as well as /sdds8fjsdifhj98sdfh
+"/{*splat}"
+
+
+Order matters!
+Your routes will be set up in your server in the order they are defined.
+app.get("/{*splat}", (req, res) => {
+  res.send("/{*splat} is a great way to catch all otherwise unmatched paths, e.g. for custom 404 error handling.");
+});
+app.get("/messages", (req, res) => {
+  res.send("This route will not be reached because the previous route's path matches first.");
+});
+In order for our GET /messages request to match the /messages route, we will need to reverse the order our routes are defined. Doing so will prevent it from reaching the /{*splat} route, as it will match the /messages route first.
