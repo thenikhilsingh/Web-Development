@@ -1,0 +1,8 @@
+In EJS, the <% and %> tags allow us to use JavaScript. This lets us write conditional statements, for loops, as well as use variables.
+<% const animals = ["Cat", "Dog", "Lemur", "Hawk"] %>
+
+<ul>
+  <% animals.map((animal) => { %>
+    <li><%= animal %>s are cute</li>
+  <% }) %>
+</ul>

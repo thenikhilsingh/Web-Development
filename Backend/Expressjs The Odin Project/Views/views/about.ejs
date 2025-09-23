@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <%- include('navbar', {links: links}) %> 
+    <ul>
+        <% aboutData.forEach(function(item) { 
+            const key = Object.keys(item)[0]; // e.g. "Rose"
+            const value = item[key]; // e.g. "Rose is a Web Developer"
+        %>
+            <li><strong><%= key %>:</strong> <%= value %></li>
+        <% }) %>
+    </ul>
+    <%- include('footer', {links: links}) %> 
+</body>
+</html>
