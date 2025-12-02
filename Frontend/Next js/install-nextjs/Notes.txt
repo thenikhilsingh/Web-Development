@@ -1,0 +1,9 @@
+to create Nextjs Project:- npx create-next-app@latest
+
+Package.Json file in NEXT.JS
+These scripts refer to the different stages of developing an application:
+next dev – Starts the development server.
+next build – Builds the application for production.
+next start – Starts the production server.
+next lint – Runs ESLint.
+
