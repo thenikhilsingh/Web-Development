@@ -1,0 +1,17 @@
+What is Layout File?
+In Next.js App Router, the layout.js (or layout.tsx) file is a special file used to wrap pages and components with a shared structure—such as headers, footers, or navigation bars. It plays a critical role in creating consistent layouts across different routes of your app.
+Typical File Structure in App Router:
+app/
+│── layout.js    → Root layout
+│── page.js     → Homepage
+│
+├── about/
+│  │── page.js   → About page
+│  │── layout.js  → Layout specific to the /about route
+│
+├── contact/
+│  │── page.js   → Contact page
+
+• The layout.js in the app/ folder is the Root Layout.
+• You can have nested layouts per route (e.g., about/layout.js).
+
