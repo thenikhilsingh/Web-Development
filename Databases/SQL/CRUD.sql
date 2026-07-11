@@ -1,0 +1,31 @@
+-- CREATE DATABASE practice
+-- CREATE TABLE users (id SERIAL PRIMARY KEY,name VARCHAR(100),email VARCHAR(255))
+-- INSERT INTO users (name,email) VALUES ('Nikhil Singh','nikhilsingh26042004@gmail.com');
+-- INSERT INTO users (name, email) VALUES ('Rahul', 'rahul@gmail.com');
+-- INSERT INTO users (name, email) VALUES ('Aman', 'aman@gmail.com');
+-- SELECT * FROM users;
+-- SELECT name FROM users;
+-- SELECT email FROM users;
+-- SELECT name,email FROM users;
+-- SELECT name FROM users WHERE id=2;
+-- SELECT * FROM users WHERE id = 2;
+-- SELECT * FROM users WHERE name = 'Aman';
+-- SELECT email FROM users WHERE name = 'Rahul';
+-- SELECT * FROM users WHERE id > 2;
+-- SELECT * FROM users WHERE id = 2 AND name = 'Rahul';
+-- SELECT * FROM users WHERE id = 2 AND name = 'Aman';
+-- SELECT * FROM users WHERE name = 'Rahul' OR name = 'Aman';
+-- SELECT * FROM users WHERE NOT name = 'Rahul';
+-- SELECT * FROM users ORDER BY name;
+-- SELECT * FROM users ORDER BY name ASC;
+-- SELECT * FROM users ORDER BY name DESC;
+-- INSERT INTO users (name, email) VALUES ('Zoya', 'zoya@gmail.com');
+-- SELECT * FROM users ORDER BY name;
+-- SELECT * FROM users LIMIT 2
+-- SELECT * FROM users ORDER BY id DESC LIMIT 1;
+-- SELECT * FROM users LIMIT 1;
+-- SELECT * FROM users ORDER BY id DESC LIMIT 3;
+-- UPDATE users SET email='rahulgoyal@gmail.com' WHERE id=2;
+-- UPDATE users SET name = 'Rahul Sharma', email = 'rahulsharma@gmail.com' WHERE id = 2;
+-- DELETE FROM users WHERE id = 3;
+-- SELECT * FROM users ORDER BY id;
