@@ -22,5 +22,18 @@
 -- SELECT users.name,COUNT(*) AS total_orders FROM users JOIN orders ON users.id = orders.customer_id GROUP BY users.id,users.name  HAVING COUNT(*)>=2;
 -- SELECT * FROM products WHERE price>10000 ORDER BY price DESC;
 -- SELECT * FROM products ORDER BY price DESC LIMIT 2;
+-- SELECT DISTINCT name FROM users;
+-- SELECT * FROM users WHERE name LIKE 'Rah%';
+-- SELECT * FROM users WHERE name LIKE '%Singh';
+-- SELECT * FROM users WHERE name LIKE '%man%';
+-- SELECT * FROM users WHERE id IN (1,3,5);
+-- SELECT * FROM users WHERE name IN ('Rahul','Aman');
+-- SELECT * FROM products WHERE price BETWEEN 1000 AND 20000;
+-- SELECT users.name,messages.message FROM users LEFT JOIN messages ON users.id=messages.sender_id;
+-- SELECT users.name,orders.product FROM users RIGHT JOIN orders ON users.id = orders.customer_id;
+-- SELECT users.name,orders.product FROM users FULL OUTER JOIN orders ON users.id = orders.customer_id;
+-- CREATE INDEX idx_users_email ON users(email);
+-- EXPLAIN ANALYZE SELECT * FROM users WHERE email = 'aman@gmail.com';
+
 
 
