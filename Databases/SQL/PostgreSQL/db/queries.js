@@ -50,6 +50,10 @@ const searchUsers = async (search) => {
   return result.rows;
 };
 
+const truncateUsers = async () => {
+  await pool.query("TRUNCATE TABLE users RESTART IDENTITY");
+};
+
 module.exports = {
   getAllUsers,
   getUsersByEmailPwd,
@@ -58,4 +62,5 @@ module.exports = {
   updateUser,
   deleteUser,
   searchUsers,
+  truncateUsers,
 };
