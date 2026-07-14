@@ -39,6 +39,17 @@ const deleteUser = async (id) => {
   return response.rows[0];
 };
 
+const searchUsers = async (search) => {
+  const result = await pool.query(
+    `SELECT *
+     FROM users
+     WHERE name ILIKE $1`,
+    [`%${search}%`],
+  );
+
+  return result.rows;
+};
+
 module.exports = {
   getAllUsers,
   getUsersByEmailPwd,
@@ -46,4 +57,5 @@ module.exports = {
   insertUser,
   updateUser,
   deleteUser,
+  searchUsers,
 };
