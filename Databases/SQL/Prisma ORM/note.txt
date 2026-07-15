@@ -7,3 +7,5 @@ if you change model then run : npx prisma migrate dev --name your-change
 
 Suppose someone on your team already created and applied the migration, but your Prisma Client is outdated.
 Then you only need: npx prisma generate
+
+to open Prisma Studio : npx prisma studio
