@@ -1,5 +1,9 @@
 step1 : run: npm install prisma @prisma/client
 Step 2: Initialize Prisma run:npx prisma init --datasource-provider postgresql --output ./generated/prisma --generator-provider prisma-client-js
+Step 3: npm install @prisma/adapter-pg pg
 
 after adding model run: npx prisma migrate dev --name init 
 if you change model then run : npx prisma migrate dev --name your-change
+
+Suppose someone on your team already created and applied the migration, but your Prisma Client is outdated.
+Then you only need: npx prisma generate

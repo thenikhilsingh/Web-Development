@@ -1,4 +1,4 @@
-import { prisma } from "../db/prisma.js";
+const { prisma } = require("../db/prisma.js");
 
 const getUsers = async (req, res) => {
   try {
@@ -6,6 +6,7 @@ const getUsers = async (req, res) => {
 
     res.status(200).json(users);
   } catch (error) {
+    console.error(error);
     res.status(500).json({
       message: "Internal Server Error",
     });
@@ -22,6 +23,7 @@ const getUserById = async (req, res) => {
     });
     res.status(200).json(user);
   } catch (error) {
+    console.error(error);
     res.status(500).json({
       message: "Internal Server Error",
     });
@@ -39,6 +41,7 @@ const createUser = async (req, res) => {
     });
     return res.status(201).json(createdUser);
   } catch (error) {
+    console.error(error);
     res.status(500).json({
       message: "Internal Server Error",
     });
@@ -60,6 +63,7 @@ const updateUser = async (req, res) => {
     });
     return res.status(200).json(updatedUser);
   } catch (error) {
+    console.error(error);
     res.status(500).json({
       message: "Internal Server Error",
     });
@@ -70,10 +74,13 @@ const deleteUser = async (req, res) => {
   try {
     const { id } = req.params;
     const deletedUser = await prisma.user.delete({
-      id: Number(id),
+      where: {
+        id: Number(id),
+      },
     });
     return res.status(200).json(deletedUser);
   } catch (error) {
+    console.error(error);
     res.status(500).json({
       message: "Internal Server Error",
     });

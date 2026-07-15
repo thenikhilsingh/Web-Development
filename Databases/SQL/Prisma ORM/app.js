@@ -1,11 +1,12 @@
-import express from "express";
-import userRoutes from "./routes/userRoutes.js";
+require("dotenv").config();
+const express = require("express");
+const userRouter = require("./routers/userRouter");
 
 const app = express();
 
 app.use(express.json());
 
-app.use("/users", userRoutes);
+app.use("/users", userRouter);
 
 const PORT = 3000;
 
