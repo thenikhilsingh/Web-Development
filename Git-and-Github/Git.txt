@@ -1,0 +1,37 @@
+Command to check git version:-                                        git --version
+Command to change username of git:-                                   git config --global user.name "name"
+Command to change email of git:-                                      git config --global user.email "email"
+Command to do directly changes in config file:-                       git config --global --edit
+To exit from config file:-                                            1. Press 'Esc' Button
+                                                                      2. Type ':wq' and enter
+To create a new folder:-                                              mkdir foldername
+To go inside the folder:-                                             cd foldername/
+To make your folder a git repo:-                                      git init
+To know what changes are done in a particular repo:-                  git status
+To track any untracked file:-                                         git add filename(Staging Area)
+To commit:-                                                           git commit -m "initial commit"
+To check how many commits are done:-                                  git log
+To let all files in staging area together:-                           git add .
+To go to any commit you want:-                                        git checkout commit hashcode/branchname
+To return on the final commit:-                                       git checkout master
+To know about the branch:-                                            git branch
+To create a branch:-                                                  git branch name
+To go to a branch:-                                                   git checkout branchname
+To create a branch and directly checkout:-                            git checkout -b branchname
+To merge branches together:-                                          git merge branchname
+To hide something from git ecosystem or github:-                      touch.gitignore
+                                                                      or simply create a file '.gitignore' and write the name of file that you want hide in .gitignore file.
+                        
+Create a localrepo as a Git repository:-
+                                    1.     git init (used to create a git repo)   
+                                    2.     git remote add origin <link>
+                                    3.     git remote -v   (to verify remote)              
+                                    4.     git branch
+                                    5.     git branch -M main (to rename branch)
+                                    6.     git push origin main
+
+
+merging branches steps:-
+                        1. git diff <branchname>    (to compare commits, branches, files, and more)
+                        2. git merge <branchname>   (to merge branches)
+                        

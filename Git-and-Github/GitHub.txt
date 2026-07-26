@@ -1,0 +1,9 @@
+To push an existing repository from the command line:-                      git remote add origin filelink
+                                                                            git branch -M master
+                                                                            git push -u origin master
+To know about the remote:-                                                  git remote -v
+To clone a repo:-                                                           git clone repolink
+To edit file inside vim:-                                                   vim filename
+                                                                            type 'i' to go into insert mode
+                                                                            to exit vim press 'esc' button and type ':wq' and enter
+To check changes done:-                                                     cat filename                                                                           
