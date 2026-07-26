@@ -1,0 +1,15 @@
+{
+  "name": "cli-todo-app",
+  "version": "1.0.0",
+  "description": "A simple CLI Todo App using Node.js",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "node": "^22.18.0",
+    "nodemon": "^3.1.10"
+  }
+}
